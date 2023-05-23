@@ -29,6 +29,7 @@
 		D93FDA962A1CCB0C007963E0 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FDA952A1CCB0C007963E0 /* RegisterViewViewModel.swift */; };
 		D93FDA982A1CCB3D007963E0 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FDA972A1CCB3D007963E0 /* ToDoListItemViewViewModel.swift */; };
 		D93FDA9A2A1CCF08007963E0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FDA992A1CCF08007963E0 /* HeaderView.swift */; };
+		D93FDA9C2A1CD88C007963E0 /* TLBotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FDA9B2A1CD88C007963E0 /* TLBotton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		D93FDA952A1CCB0C007963E0 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		D93FDA972A1CCB3D007963E0 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
 		D93FDA992A1CCF08007963E0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D93FDA9B2A1CD88C007963E0 /* TLBotton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLBotton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				D93FDA852A1CC6D0007963E0 /* RegisterView.swift */,
 				D93FDA872A1CC723007963E0 /* ToDoListItemView.swift */,
 				D93FDA992A1CCF08007963E0 /* HeaderView.swift */,
+				D93FDA9B2A1CD88C007963E0 /* TLBotton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				D93FDA802A1CC677007963E0 /* TodoListView.swift in Sources */,
 				D93FDA8A2A1CC798007963E0 /* ToDoListItem.swift in Sources */,
 				D93FDA8E2A1CC824007963E0 /* MainViewViewModel.swift in Sources */,
+				D93FDA9C2A1CD88C007963E0 /* TLBotton.swift in Sources */,
 				D93FDA922A1CCAD9007963E0 /* NewItemViewViewModel.swift in Sources */,
 				D93FDA902A1CCAAE007963E0 /* ToDoListViewViewModel.swift in Sources */,
 				D93FDA632A1C6C5C007963E0 /* ToDoListApp.swift in Sources */,
