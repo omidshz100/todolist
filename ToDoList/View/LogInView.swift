@@ -17,15 +17,20 @@ struct LogInView: View {
             VStack{
                 // Header
                 HeaderView(title: "To Do List", subTitle: "Get things done", angle: 15, color: Color.pink)
+                
                 // Login Form
                 Form{
+                    if !viewModel.errorMessage.isEmpty{
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(Color.red)
+                    }
                     TextField("Email address", text: $viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
                         .autocapitalization(.none)
                     SecureField("password", text: $viewModel.password)
                         .textFieldStyle(DefaultTextFieldStyle())
                     TLBotton(title: "Login", bgColor: .blue){
-                        // atempt login
+                        viewModel.login()
                         
                     }
                     .padding()
@@ -33,12 +38,12 @@ struct LogInView: View {
                 .offset(y: -120)
                 // Create Account
                 
-                VStack{
-                    Text("New around here?")
-                    NavigationLink("Create an account") {
-                        RegisterView()
-                    }
-                }.padding(.bottom, 50)
+//                VStack{
+//                    Text("New around here?")
+//                    NavigationLink("Create an account") {
+//                        RegisterView()
+//                    }
+//                }.padding(.bottom, 50)
                 Spacer()
             }
         }
