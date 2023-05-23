@@ -38,13 +38,13 @@ struct LogInView: View {
                 .offset(y: -120)
                 // Create Account
                 
-//                VStack{
-//                    Text("New around here?")
-//                    NavigationLink("Create an account") {
-//                        RegisterView()
-//                    }
-//                }.padding(.bottom, 50)
-                Spacer()
+                VStack{
+                    Text("New around here?")
+                    NavigationLink("Create an account") {
+                        RegisterView()
+                    }
+                }
+                .background(Color.yellow)
             }
         }
         
