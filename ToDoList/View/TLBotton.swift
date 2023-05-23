@@ -23,8 +23,8 @@ struct TLBotton: View {
                 Text(title)
                     .foregroundColor(Color.white)
                     .bold()
-            }
-        }.padding()
+            }.padding()
+        }
     }
 }
 

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import FirebaseAuth
 
 class LoginViewViewModel:ObservableObject {
     
@@ -15,16 +15,23 @@ class LoginViewViewModel:ObservableObject {
     @Published var errorMessage:String = "" 
     
     func login(){
+        guard validate() else {
+            return
+        }
+        Auth.auth().signIn(withEmail: email, password: password)
+    }
+    
+    func validate()->Bool{
         errorMessage = ""
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty, !password.trimmingCharacters(in: .whitespaces).isEmpty else {
             errorMessage = "Please fill in the all fields .... "
-            return
+            return false
         }
         
         guard email.contains("@") && email.contains(".") else {
             errorMessage = "Please enter valid email"
-            return
+            return false
         }
-        print("Called")
+        return true
     }
 }

@@ -44,7 +44,6 @@ struct LogInView: View {
                         RegisterView()
                     }
                 }
-                .background(Color.yellow)
             }
         }
         
