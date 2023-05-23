@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct LogInView: View {
-    @State var email:String = ""
-    @State var password:String = ""
+    @StateObject var viewModel: LoginViewViewModel = LoginViewViewModel()
     
     
     
@@ -20,10 +19,10 @@ struct LogInView: View {
                 HeaderView(title: "To Do List", subTitle: "Get things done", angle: 15, color: Color.pink)
                 // Login Form
                 Form{
-                    TextField("Email address", text: $email)
+                    TextField("Email address", text: $viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
                         .autocapitalization(.none)
-                    SecureField("password", text: $password)
+                    SecureField("password", text: $viewModel.password)
                         .textFieldStyle(DefaultTextFieldStyle())
                     TLBotton(title: "Login", bgColor: .blue){
                         // atempt login
