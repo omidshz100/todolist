@@ -28,6 +28,7 @@
 		D93FDA942A1CCAF3007963E0 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FDA932A1CCAF3007963E0 /* LoginViewViewModel.swift */; };
 		D93FDA962A1CCB0C007963E0 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FDA952A1CCB0C007963E0 /* RegisterViewViewModel.swift */; };
 		D93FDA982A1CCB3D007963E0 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FDA972A1CCB3D007963E0 /* ToDoListItemViewViewModel.swift */; };
+		D93FDA9A2A1CCF08007963E0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FDA992A1CCF08007963E0 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		D93FDA932A1CCAF3007963E0 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		D93FDA952A1CCB0C007963E0 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		D93FDA972A1CCB3D007963E0 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
+		D93FDA992A1CCF08007963E0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				D93FDA832A1CC6B0007963E0 /* LogInView.swift */,
 				D93FDA852A1CC6D0007963E0 /* RegisterView.swift */,
 				D93FDA872A1CC723007963E0 /* ToDoListItemView.swift */,
+				D93FDA992A1CCF08007963E0 /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				D93FDA922A1CCAD9007963E0 /* NewItemViewViewModel.swift in Sources */,
 				D93FDA902A1CCAAE007963E0 /* ToDoListViewViewModel.swift in Sources */,
 				D93FDA632A1C6C5C007963E0 /* ToDoListApp.swift in Sources */,
+				D93FDA9A2A1CCF08007963E0 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
