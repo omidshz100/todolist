@@ -6,20 +6,24 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
+
 
 struct TodoListView: View {
     @StateObject var viewModel:ToDoListViewViewModel = ToDoListViewViewModel()
-    
-    private var userId:String
+    @FirestoreQuery var items:[ToDoListItem]
     
     init(userID:String) {
-        self.userId = userID
+        // user <id>/todo/<entries>
+        self._items = FirestoreQuery(collectionPath: "users/\(userID)/todo")
     }
     
     var body: some View {
         NavigationView{
             VStack{
-                
+                List(items){item in
+                    Text(item.titel)
+                }.listStyle(PlainListStyle())
             }
             .navigationTitle("To Do list")
             .toolbar{
@@ -39,6 +43,6 @@ struct TodoListView: View {
 
 struct TodoListItemsView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoListView(userID: "")
+        TodoListView(userID: "lJEvv8QNTqNyotzmdNgcygdb8YI2")
     }
 }
