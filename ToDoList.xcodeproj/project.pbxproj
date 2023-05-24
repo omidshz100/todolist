@@ -131,8 +131,8 @@
 				D93FDA8D2A1CC824007963E0 /* MainViewViewModel.swift */,
 				D93FDA8F2A1CCAAE007963E0 /* ToDoListViewViewModel.swift */,
 				D93FDAA22A1E01E0007963E0 /* ProvileViewViewModel.swift */,
-				D93FDA972A1CCB3D007963E0 /* ToDoListItemViewViewModel.swift */,
 				D93FDA912A1CCAD9007963E0 /* NewItemViewViewModel.swift */,
+				D93FDA972A1CCB3D007963E0 /* ToDoListItemViewViewModel.swift */,
 				D93FDA932A1CCAF3007963E0 /* LoginViewViewModel.swift */,
 				D93FDA952A1CCB0C007963E0 /* RegisterViewViewModel.swift */,
 			);
