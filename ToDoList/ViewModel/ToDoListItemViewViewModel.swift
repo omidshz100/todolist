@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+// todoList each item in TODoListView ( Each row )
+class ToDoListItemViewViewModel:ObservableObject{
+    init(){
+        
+    }
+}
