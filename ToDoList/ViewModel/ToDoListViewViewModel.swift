@@ -18,4 +18,8 @@ class ToDoListViewViewModel:ObservableObject{
         
     }
     
+    
+    func delete(id:String){
+        
+    }
 }
